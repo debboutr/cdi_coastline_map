@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Coastline Accumulation</title>
+  <link rel="shortcut icon" href="epa.ico" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
+  <link rel='stylesheet prefetch' href='https://unpkg.com/leaflet@1.0.3/dist/leaflet.css'>
+  <link rel="stylesheet" href="css/style.css">
+  <script type="text/javascript" src="accum2.js"></script>
+  <script type="text/javascript" src="them.js"></script>
+  <script type="text/javascript" src="cats.js"></script>
+  <script type="text/javascript" src="themCats.js"></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle glyphicon glyphicon-menu-hamburger" data-toggle="collapse" data-target="#navbar"></button>
+        <a class="navbar-brand" href="#">NHDPlus Flowline Accumulation: EPA v. USGS <br><i style="font-size:14px;">An example of accumulated catchment are differences</i></a>
+        
+      </div>
+      <div class="collapse navbar-collapse" id="navbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="https://anaconda.org/debboutr/areacomparison/notebook" title="Area Comparisons" target="_blank" type="button" class="btn btn-success btn-md nldi">Area Comparisons</a></li>
+            <li><button type="button" class="btn btn-success btn-md" id="addVanillaJS">Add NLDI</button></li>        
+            <li><button type="button" class="btn btn-success btn-md" id="removeLayer">Remove NLDI</button></li>
+            <li><a href="https://cida.usgs.gov/nldi/about" title="AboutNLDI" target="_blank" type="button" class="btn btn-success btn-md nldi">NLDI Services Website</a></li>
+          </ul>
+      </div>
+    </nav>
+  </header>
+<!-- container for map -->
+<section id="map">
+  <!-- display error message -->
+  <span id="errorMsg"></span>
+</section>
+<script src='https://code.jquery.com/jquery-3.2.1.min.js'></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
+
+<script src='https://unpkg.com/leaflet@1.0.3/dist/leaflet.js'></script>
+<script src="js/leaflet.smoothmarkerbouncing.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>
